@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.tchatroom
+{
+  background-color: white;
+  width:99%;
+  height:100%;
+  color:darkslategrey;
+}
