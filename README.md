@@ -1,3 +1,12 @@
+## ZBEW MASTER ONLINE
+## par FabDev06
+
+### Technologies utilisées:
+- Serveur développement Node.js
+- Appli en React
+- Architecture de l'application (API) : create-react-app
+- Editeur Visual Studio Code (opensource, Microsoft)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
