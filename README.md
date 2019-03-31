@@ -5,7 +5,10 @@
 - Serveur développement Node.js
 - Appli en React
 - Architecture de l'application (API) : create-react-app
-- Editeur Visual Studio Code (opensource, Microsoft)
+- Bdd MySQL : MAMP (serveur dev.) avec Sequelize
+- Editeur Visual Studio Code (opensource, Microsoft) + lignes de commande
+
+##
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

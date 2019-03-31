@@ -9,8 +9,14 @@ import Accueil from './Accueil';
 
 class App extends Component
 {
+  lance_tchat(pseudo)
+  {
+    console.log("Lancement tchat avec le joueur : "+pseudo);
+  }
+
   render()
   {
+    //console.log("Le joueur "+pseudo+" est connecté");
     return (
       <Accueil />
     );

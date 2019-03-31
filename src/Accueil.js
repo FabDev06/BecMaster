@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import App from './App';
 
 class Accueil extends Component
 {
@@ -40,8 +41,7 @@ class Accueil extends Component
 
   validePseudo()
   {
-    const pseudo = this.state.pseudo;
-    console.log("Le joueur "+pseudo+" est connecté");
+    App.lance_tchat(this.state.pseudo);
   }
 }
 
