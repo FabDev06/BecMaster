@@ -7,6 +7,6 @@ class Joueur
        this.score=0;
        this.online=false;
     }
-}  
+}
 
 export default Joueur;
