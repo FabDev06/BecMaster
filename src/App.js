@@ -10,7 +10,7 @@ import Joueur from './Joueur';
 import Tchat from './Tchat';
 import Jeu from './Jeu';
 
-import sequelize from './models/index';
+//import sequelize from './models/index';
 import mJoueur from './models/Joueur';
 
 class App extends Component
@@ -27,7 +27,7 @@ class App extends Component
   {
     return (
       <div className="App-header">
-      <h1>&lt;Bienvenue dans Zbew Master Online /&gt;</h1>
+      <h1>&lt;Bienvenue dans Bec Master Online /&gt;</h1>
       <p><br/></p>
         <p>Entre ton pseudo de joueur : </p>
         <p>
@@ -73,7 +73,7 @@ class App extends Component
         */
 
         // verif si joueur en bdd
-        sequelize.mJoueur.findAll({ where: {pseudo: pseudo} }).then(users =>
+        mJoueur.findAll({ where: {pseudo: pseudo} }).then(users =>
         {
           if(users['pseudo']!==null)
           {
@@ -82,7 +82,7 @@ class App extends Component
           else
           {
             // si non, insert en bdd
-            sequelize.mJoueur.create(
+            mJoueur.create(
               {
                 pseudo: pseudo,
                 vie : 0,
