@@ -10,7 +10,15 @@ h4
     padding:10px;
 }
 
-.msg_div
+.liste_msg
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:600px;
+    color:olivedrab;
+}
+
+.new_msg_div
 {
     position: absolute;
     width:100%;

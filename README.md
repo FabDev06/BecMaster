@@ -3,9 +3,9 @@
 
 ### Technologies utilisées:
 - Serveur développement Node.js
-- Appli en React
+- Appli en React (de facebook)
 - Architecture de l'application (API) : create-react-app
-- Bdd MySQL : MAMP (serveur dev.) avec Sequelize
+- Bdd MySQL : MAMP (serveur dev.) avec Sequelize (bug mysql2 package pour l'instant)
 - Editeur Visual Studio Code (opensource, Microsoft) + lignes de commande
 
 ##

@@ -1,18 +1,19 @@
 {
-  "name": "zbewmaster",
+  "name": "becmaster",
+  "version": "1.0.0",
+  "description": "un bowmaster online deux joueurs",
   "author": "FabDev06",
-  "version": "0.1.0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabDev06/BecMaster/issues"
+  },
+  "homepage": "https://github.com/FabDev06/BecMaster#readme",
+  "main": "index.js",
   "private": true,
   "dependencies": {
-    "express": "^4.16.4",
-    "mysql": "^2.16.0",
-    "mysql2": "^1.6.5",
-    "pg-hstore": "^2.3.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8",
-    "sequelize": "^5.2.6",
-    "yarn": "^1.15.2"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,5 +29,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabDev06/BecMaster.git"
+  }
 }
