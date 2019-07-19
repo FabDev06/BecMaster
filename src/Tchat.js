@@ -9,7 +9,10 @@ class Tchat extends Component
   constructor()
   {
     super();
-    this.state = {msg: '', liste: [{heure:'', message:''}]};
+    this.state = {
+                  msg: '',
+                  liste:[{id:0, heure:'', message:''}]
+                };
 
     this.set_msg = this.set_msg.bind(this);
     this.env_msg = this.env_msg.bind(this);
@@ -48,8 +51,7 @@ https://blog.vjeux.com/2013/javascript/scroll-position-with-react.html
 
       */
 
-    return (
-      <div>
+    return (<div>
           <h4>Bienvenue {this.props.pseudo} !</h4>
           
           <div ref={scroll => this.liste = scroll} className="liste_msg">
@@ -57,7 +59,8 @@ https://blog.vjeux.com/2013/javascript/scroll-position-with-react.html
           {
               // le !=='' différent de vide permet de ne pas afficher le 1er élément
               // qui est ajouté dans le constructeur lors de l'instanciation
-              return element.message!=='' && ( <div>[{element.heure}] {this.props.pseudo} : {element.message}<br/></div> );
+              // l'attribut key des différentes div permet à React de les différencier (vu grace à un warning en console)
+              return element.message!=='' && ( <div key={element.id}>[{element.heure}] <strong>{this.props.pseudo}</strong> : {element.message}<br/></div> );
           })}
           </div>
 
@@ -66,9 +69,7 @@ https://blog.vjeux.com/2013/javascript/scroll-position-with-react.html
             <br/>
             <button onClick={this.env_msg}>Envoyer</button>
           </div>
-      </div>
-      
-    );
+      </div>);
   }
 
   fixEnter(e)
@@ -99,7 +100,7 @@ https://blog.vjeux.com/2013/javascript/scroll-position-with-react.html
       (ok) effacer state
       */
      let ladate = new Date();
-     this.state.liste.push({heure:ladate.getHours()+':'+ladate.getMinutes(), message:this.state.msg});
+     this.state.liste.push({id:this.state.liste.length,heure:ladate.getHours()+':'+(ladate.getMinutes()<10?'0'+ladate.getMinutes():ladate.getMinutes()), message:this.state.msg});
      this.setState({ msg: '' });
      // reset du textarea par référence ref
      this.newValeur.value='';

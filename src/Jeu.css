@@ -1,0 +1,66 @@
+#divjeu
+{
+    margin-left: 10px;
+    width:100%;
+    height:100%;
+    padding:0px;
+    left:0px;
+    overflow: hidden;
+}
+
+.ciel
+{
+    position: relative;
+    margin-left: 20px;
+    
+    background-color: rgb(86, 184, 241);
+    display: flex;
+    min-height: 90vh;
+    overflow: hidden;
+    z-index:2;
+}
+
+.visee
+{
+    border-radius:8px;
+    margin-top:5px;
+    width:10px;
+    height: 10px;
+    border:2px solid white;
+    background-color: red;
+    position:absolute;
+}
+
+.fps
+{
+    position:absolute;
+    left:50%;
+    top:18px;
+
+    font-size: 18px;
+    font-family: 'Trebuchet MS';
+    color: darkorange;
+    padding:8px;
+
+    border-radius:8px;
+    background-color: lightblue;
+}
+
+.divGameover
+{
+    z-index: 8;
+    width: 100%;
+    background-color: rgba(0, 48, 88, .6);
+    text-align: center;
+    margin: 1%;
+}
+
+.divStats
+{
+    background-color: gray;
+    background-image: url('assets/fond-accueil.png');
+    background-position: top center;
+    border-radius: 18px;
+    padding: 18px;
+    margin: 10%;
+}

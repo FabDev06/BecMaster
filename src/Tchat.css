@@ -14,13 +14,23 @@ h4
 {
     overflow-x: hidden;
     overflow-y: auto;
-    height:600px;
-    color:olivedrab;
+    height:500px;
+    color:seagreen;
+    padding:5px;
 }
 
 .new_msg_div
 {
     position: absolute;
-    width:100%;
+    width:90%;
     bottom:0px;
+    background-color: white;
+
+}
+
+.tchatroom
+{
+  background-color: white;
+  height: 90%;
+  color:darkslategrey;
 }

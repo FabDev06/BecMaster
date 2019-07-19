@@ -1,11 +1,11 @@
 
 // Importation des dépendances
 
-import Serveur from 'express';
+import Server from 'express';
 
 class Serveur extends Server
 {
 
 }
 
-export default Server;
+export default Serveur;

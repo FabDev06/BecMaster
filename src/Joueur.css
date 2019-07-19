@@ -1,0 +1,33 @@
+.score
+{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+}
+
+.rondJoueur
+{
+    margin-left: 8px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    width:32px;
+    height:32px;
+    color:gray; 
+}
+
+.board1
+{
+    color:yellow;  
+}
+
+.board2
+{
+    color:white;  
+}
+
+.board3
+{
+    color:gold;  
+}
