@@ -8,7 +8,7 @@ class Joueur
         this.pseudo=oblet.pseudo;
         this.online=true;
         this.chateau=[];       //<Sprite key={'spCh'+oblet.idj} src={oblet.sonChatox} oMouseM={oblet.oMouse && this.oMouseM} oMouseU={oblet.oMouse && this.oMouseU} x={oblet.x} y={oblet.y} l={oblet.l} h={oblet.h} />,
-        this.vie=15;
+        this.vie=100;
         this.score=0;
 
         this.lancees=0;

@@ -33,15 +33,16 @@ class App extends Component
 
                     <div style={{position:'relative'}}>
                       <div className="dVideo">
-                        <video width={200} height={200} autoPlay={true} loop={true}><source src={Tuto1} type="video/mp4"></source>Votre navigateur ne prend pas en charge les vidéos HTML5</video>
+                        <video width={200} height={200} autoPlay={true} loop={true} controls={true}><source src={Tuto1} type="video/mp4"></source>Votre navigateur ne prend pas en charge les vidéos HTML5</video>
                         <br/><br/>
                         1) Un simple clic sur l'arc de votre chateau mettra en place la visée (réticule).
+                        <br/>
                       </div>
 
                       <div className="dVideo">
-                        <video width={200} height={200} autoPlay={true} loop={true}><source src={Tuto2} type="video/mp4"></source>Votre navigateur ne prend pas en charge les vidéos HTML5</video>
+                        <video width={200} height={200} autoPlay={true} loop={true} controls={true}><source src={Tuto2} type="video/mp4"></source>Votre navigateur ne prend pas en charge les vidéos HTML5</video>
                         <br/><br/>
-                        2) En faisant glisser la souris vers le chateau, un guide apparait. Un clic sur le chateau permet de lancer la flèche.
+                        2) En glissant la souris vers le chateau, un guide apparait. Un clic sur le chateau permet de lancer la flèche.
                       </div>
                     </div>
               </div>
